@@ -138,7 +138,7 @@ export class Api2Service {
       task.doneDate = new Date(obj.doneDate);
     }
     if (obj.tags) {
-      task.tags = obj.tags.split('#');
+      task.tags = obj.tags;
     }
     return task;
   }
